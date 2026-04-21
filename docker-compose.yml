@@ -1,0 +1,6 @@
+services:
+  ia-gentek:
+    build: .
+    ports:
+      - "4200:80"
+    container_name: ia-gentek-app

@@ -1,0 +1,10 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({ providedIn: 'root' })
+export class WhatsAppService {
+  build(phone: string, message: string): string {
+    const encodedPhone = encodeURIComponent(phone ?? '');
+    const encodedMessage = encodeURIComponent(message ?? '');
+    return `https://wa.me/${encodedPhone}?text=${encodedMessage}`;
+  }
+}

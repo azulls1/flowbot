@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- Icon mark -->
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="white"/>
+  <path d="M13 18.5c0-1.38 1.12-2.5 2.5-2.5h9c1.38 0 2.5 1.12 2.5 2.5v7c0 1.38-1.12 2.5-2.5 2.5h-1.5l-3 3v-3H15.5c-1.38 0-2.5-1.12-2.5-2.5v-7z" fill="#9EADA3"/>
+  <circle cx="18" cy="22" r="1.2" fill="#04202C"/>
+  <circle cx="22" cy="22" r="1.2" fill="#04202C"/>
+  <path d="M30 22c0-1.1.9-2 2-2h3c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2h-.5l-2 2v-2H32c-1.1 0-2-.9-2-2v-5z" fill="#04202C"/>
+  <!-- Wordmark -->
+  <text x="52" y="22" font-family="Sora, sans-serif" font-weight="700" font-size="18" fill="white">IA</text>
+  <text x="76" y="22" font-family="Sora, sans-serif" font-weight="700" font-size="18" fill="#C9D1C8">Gentek</text>
+  <text x="52" y="38" font-family="DM Sans, sans-serif" font-weight="400" font-size="9" fill="#9EADA3" letter-spacing="0.1em">CHATBOT MULTICANAL</text>
+</svg>

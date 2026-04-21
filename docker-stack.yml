@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  frontend:
+    image: flowbot-frontend:latest
+    networks:
+      - iagenteknet
+    deploy:
+      replicas: 1
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.flowbot_frontend.rule=Host(`flowbot.iagentek.com.mx`)"
+        - "traefik.http.routers.flowbot_frontend.entrypoints=websecure"
+        - "traefik.http.routers.flowbot_frontend.tls=true"
+        - "traefik.http.routers.flowbot_frontend.tls.certresolver=letsencryptresolver"
+        - "traefik.http.services.flowbot_frontend.loadbalancer.server.port=80"
+
+networks:
+  iagenteknet:
+    external: true

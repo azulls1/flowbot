@@ -1,0 +1,335 @@
+<!-- ═══ Navbar — Glassmorphism ═══ -->
+<nav class="navbar">
+  <div class="navbar-inner max-w-6xl mx-auto">
+    <div class="flex items-center gap-2">
+      <img src="assets/logos/logo-iagentek-black.webp"
+           alt="IA Gentek"
+           class="h-8 sm:h-10"
+           loading="eager">
+      <span class="font-display text-lg sm:text-xl font-bold text-forest">Gentek</span>
+    </div>
+    <a [href]="waUrl" target="_blank" rel="noopener" class="btn btn-primary">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.325 0-4.475-.703-6.27-1.906l-.438-.296-3.216 1.078 1.078-3.216-.296-.438A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
+      </svg>
+      Contactar
+    </a>
+  </div>
+</nav>
+
+<!-- ═══ Hero — Dark gradient card ═══ -->
+<section class="page page-medium">
+  <div class="card-hero animate-fadeIn">
+    <div class="flex items-center justify-center gap-3 mb-6">
+      <img src="assets/logos/logo_ia_withe.webp"
+           alt="IA Gentek"
+           class="h-12 sm:h-16">
+      <span class="font-display text-2xl sm:text-3xl font-bold text-white">Gentek</span>
+    </div>
+    <span class="inline-block px-3 py-1 rounded-full text-xs font-medium
+                 bg-white/15 text-white/90 mb-6 font-mono">
+      Potenciado con IA
+    </span>
+    <h1 class="card-hero__title">
+      Chatbot Multicanal<br>
+      <span class="gradient-text" style="background: linear-gradient(135deg, #9EADA3, #C9D1C8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+        con IA para WhatsApp
+      </span>
+    </h1>
+    <p class="card-hero__desc">
+      Automatiza conversaciones 24/7 con
+      <strong class="text-white">n8n</strong> +
+      <strong class="text-white">IA generativa</strong>.
+      De idea a chatbot en dias.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+      <span class="badge badge--on-dark">Consulta</span>
+      <span class="text-on-dark-dim">&middot;</span>
+      <span class="badge badge--on-dark">Diseno</span>
+      <span class="text-on-dark-dim">&middot;</span>
+      <span class="badge badge--on-dark">Lanzamiento</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ QR & WhatsApp Section ═══ -->
+<section class="page page-narrow stagger-children">
+  <div class="card text-center animate-fadeInUp">
+    <!-- Header -->
+    <div class="flex items-center justify-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-full gradient-primary flex items-center justify-center">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.325 0-4.475-.703-6.27-1.906l-.438-.296-3.216 1.078 1.078-3.216-.296-.438A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
+        </svg>
+      </div>
+      <h2 class="font-display text-lg font-bold text-gray-900">Escanea y Chatea</h2>
+    </div>
+
+    <p class="text-sm text-gray-500 mb-6">
+      Conectate al instante con nuestro chatbot inteligente
+    </p>
+
+    <!-- QR Code -->
+    <div class="flex justify-center mb-6">
+      <div class="relative">
+        <img *ngIf="!loadingQr"
+             [src]="qrSrc"
+             alt="QR WhatsApp"
+             class="w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] rounded-lg shadow-soft">
+        <div *ngIf="loadingQr"
+             class="w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] rounded-lg bg-gray-100
+                    flex flex-col items-center justify-center gap-3">
+          <div class="loading-dots" role="status" aria-label="Cargando">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="text-xs text-gray-500">Cargando QR...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <a [href]="waUrl"
+       target="_blank"
+       rel="noopener"
+       class="btn btn-cta w-full sm:w-auto">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.325 0-4.475-.703-6.27-1.906l-.438-.296-3.216 1.078 1.078-3.216-.296-.438A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
+      </svg>
+      Abrir WhatsApp Ahora
+    </a>
+
+    <p class="text-xs text-gray-400 mt-4">
+      O escanea el codigo QR con tu camara
+    </p>
+  </div>
+</section>
+
+<!-- ═══ Features Section ═══ -->
+<section class="page page-medium">
+  <div class="text-center mb-8 animate-fadeIn">
+    <h3 class="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+      Por que elegir {{ brand }}?
+    </h3>
+    <p class="text-sm text-gray-500">
+      Tecnologia de vanguardia para tu negocio
+    </p>
+  </div>
+
+  <div class="grid-features stagger-children">
+    <!-- Feature 1 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.204-.107-.397.165-.71.505-.78.929l-.15.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">Orquestacion n8n</h4>
+      <p class="text-sm text-gray-600">
+        Flujos modulares y escalables con el poder de n8n para automatizar cualquier proceso.
+      </p>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A8.966 8.966 0 013 12c0-1.264.26-2.467.732-3.558"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">24/7 Multicanal</h4>
+      <p class="text-sm text-gray-600">
+        Atencion continua en WhatsApp, Web, Email y mas. Tu bot siempre disponible.
+      </p>
+    </div>
+
+    <!-- Feature 3 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">IA Generativa</h4>
+      <p class="text-sm text-gray-600">
+        Intent detection, RAG y contenido personalizado con los mejores modelos de IA.
+      </p>
+    </div>
+
+    <!-- Feature 4 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">Seguridad Total</h4>
+      <p class="text-sm text-gray-600">
+        Roles, logs, rate limiting y encriptacion. Tus datos siempre protegidos.
+      </p>
+    </div>
+
+    <!-- Feature 5 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">Analytics Avanzado</h4>
+      <p class="text-sm text-gray-600">
+        A/B testing, metricas de conversion y mejora continua basada en datos.
+      </p>
+    </div>
+
+    <!-- Feature 6 -->
+    <div class="card-feature animate-fadeInUp">
+      <div class="card-feature__icon">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
+        </svg>
+      </div>
+      <h4 class="font-display font-semibold text-gray-900 mb-1">Integracion CRM</h4>
+      <p class="text-sm text-gray-600">
+        Conecta con tus sistemas existentes y bases de datos sin complicaciones.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Process Section ═══ -->
+<section class="page page-medium">
+  <div class="text-center mb-8 animate-fadeIn">
+    <h3 class="font-display text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+      Nuestro Proceso
+    </h3>
+    <p class="text-sm text-gray-500">
+      De la idea al lanzamiento en dias, no meses
+    </p>
+  </div>
+
+  <div class="max-w-3xl mx-auto stack-lg stagger-children">
+    <!-- Step 1 -->
+    <div class="card hover-lift animate-slideUp">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+          </svg>
+        </div>
+        <div>
+          <span class="badge badge-active text-xs mb-1">PASO 1</span>
+          <h4 class="font-display font-bold text-lg text-gray-900">Consulta</h4>
+        </div>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Diagnostico express de tus necesidades, mapeo de canales y priorizacion de quick-wins.
+      </p>
+      <ul class="space-y-1 text-sm text-gray-700">
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Analisis de use cases
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Mapeo de flujos
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Roadmap claro
+        </li>
+      </ul>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="card hover-lift animate-slideUp">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/>
+          </svg>
+        </div>
+        <div>
+          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-pine">PASO 2</span>
+          <h4 class="font-display font-bold text-lg text-gray-900">Diseno</h4>
+        </div>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Construccion de flujos n8n + IA, optimizacion de prompts y pruebas con usuarios reales.
+      </p>
+      <ul class="space-y-1 text-sm text-gray-700">
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Desarrollo de workflows
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Prompt engineering
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Testing iterativo
+        </li>
+      </ul>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="card hover-lift animate-slideUp">
+      <div class="flex items-center gap-4 mb-4">
+        <div class="w-12 h-12 rounded-xl bg-bark flex items-center justify-center flex-shrink-0">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+          </svg>
+        </div>
+        <div>
+          <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-bark">PASO 3</span>
+          <h4 class="font-display font-bold text-lg text-gray-900">Lanzamiento</h4>
+        </div>
+      </div>
+      <p class="text-sm text-gray-600 mb-3">
+        Deploy a produccion, configuracion de metricas, handover y mejora continua.
+      </p>
+      <ul class="space-y-1 text-sm text-gray-700">
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Deploy seguro
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Monitoreo 24/7
+        </li>
+        <li class="flex items-center gap-2">
+          <svg class="w-4 h-4 text-pine flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+          Soporte continuo
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Footer ═══ -->
+<footer class="app-footer">
+  <div class="max-w-5xl mx-auto text-center space-y-3">
+    <div class="flex items-center justify-center gap-2">
+      <img src="assets/logos/logo-iagentek-black.webp"
+           alt="IA Gentek"
+           class="h-8"
+           loading="eager">
+      <span class="font-display text-lg font-bold text-forest">Gentek</span>
+    </div>
+    <div class="flex items-center justify-center gap-2 text-sm text-gray-500">
+      <span>&copy; {{ currentYear }} {{ brand }}</span>
+      <span class="text-gray-300">&middot;</span>
+      <span>Todos los derechos reservados</span>
+    </div>
+    <p class="text-xs text-gray-400">
+      Automatizacion inteligente con n8n + IA generativa
+    </p>
+    <p class="text-xs text-gray-400">
+      Creado por <span class="font-semibold text-pine">Samael Hernandez</span>
+    </p>
+  </div>
+</footer>

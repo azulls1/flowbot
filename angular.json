@@ -49,6 +49,14 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "_headers",
+                "input": "src"
+              },
+              {
+                "glob": "_redirects",
+                "input": "src"
               }
             ],
             "styles": [
