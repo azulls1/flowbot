@@ -1,59 +1,86 @@
-# IaGentek
+# FlowBot - IA Gentek
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Landing page de **IA Gentek**, servicio de chatbots multicanal con IA para WhatsApp. Construido con Angular 19, Tailwind CSS v4 y Forest Design System.
 
-## Development server
+**Produccion:** [flowbot.iagentek.com.mx](https://flowbot.iagentek.com.mx)
 
-To start a local development server, run:
+## Stack
+
+- **Angular 19** (standalone components)
+- **Tailwind CSS v4** + **Forest Design System** (paleta bosque, glassmorphism, animaciones Apple)
+- **Docker** + **Nginx** para produccion
+- **Traefik** como reverse proxy con SSL automatico (Let's Encrypt)
+
+## Estructura
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   └── home/                # Landing page completa
+│   ├── services/
+│   │   ├── whatsapp.service.ts  # Generador URL wa.me
+│   │   └── qr.service.ts       # Generador QR codes
+│   ├── app.component.ts
+│   └── app.config.ts
+├── environments/
+├── forest/css/                  # Forest Design System
+├── styles.css
+├── _headers                     # Headers seguridad (Netlify)
+└── _redirects                   # SPA redirect (Netlify)
+public/
+├── assets/
+│   ├── icons/                   # SVGs reutilizables
+│   ├── images/                  # QR WhatsApp
+│   └── logos/                   # Logos IA Gentek (negro/blanco)
+└── favicon.ico
+```
+
+## Desarrollo local
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Abrir http://localhost:4200
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Docker (local)
 
 ```bash
-ng generate component component-name
+docker compose up --build -d
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abrir http://localhost:4200
+
+## Deploy en VPS (Docker Swarm + Traefik)
 
 ```bash
-ng generate --help
+# Construir imagen en el VPS
+docker build -t flowbot-frontend:latest .
+
+# Deployar stack
+docker stack deploy -c docker-stack.yml flowbot
 ```
 
-## Building
+El `docker-stack.yml` configura Traefik con SSL automatico para `flowbot.iagentek.com.mx`.
 
-To build the project run:
+## Deploy en Netlify (alternativo)
 
-```bash
-ng build
-```
+El proyecto incluye `netlify.toml`, `_headers` y `_redirects`. Conectar el repo en Netlify y se deploya automaticamente.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Build command:** `npm run build`
+- **Publish directory:** `dist/ia-gentek/browser`
 
-## Running unit tests
+## Secciones de la landing
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. **Navbar** - Glassmorphism + logo IA Gentek + boton contacto
+2. **Hero** - Card oscura con gradiente Forest + logo blanco
+3. **QR + WhatsApp** - Escanear QR o abrir WhatsApp directo
+4. **Features** - 6 cards: n8n, Multicanal, IA, Seguridad, Analytics, CRM
+5. **Proceso** - 3 pasos: Consulta, Diseno, Lanzamiento
+6. **Footer** - Logo + creditos
 
-```bash
-ng test
-```
+## Creado por
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Samael Hernandez** - [IA Gentek](https://iagentek.com.mx)
